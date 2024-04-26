@@ -1,6 +1,6 @@
-# Guia  de consulta de Bases de Datos  NO SE COPIEN VAGOS
+# TP2 consulta de Bases de Datos  NO SE COPIEN VAGOS
 
-### **Alumnos:** Juan Baader, Sofia Arisi y Julieta Kogan
+### **Alumnos:** Juan Baader
 
 ### **Año:** 2024
 
@@ -16,16 +16,16 @@
 ## **Primer Ejercicio**
 Santos quiere tener una lista completa de sus empleados, entonces necesita una consulta que devuelva el dni, nombre y apellido de todos los empleados junto con el nombre del sector en el que trabajan (no quiere la información de los empleados que no tienen un sector).
 ```sql
-SELECT `dni`, `Nombre`
-FROM `Desarolladores`
-ORDER BY `Nombre`;
+SELECT empleado.dni, empleado.nombre, empleado.apellido
+FROM empleado
+JOIN sector ON empleado.id_sector = sector.nombre
 ```
 
 ## **Segundo Ejercicio**
 Una búsqueda que devuelva algunos registros (+ de 1) pero no todos
 
 ```sql
-SELECT `DNI_D`, `Nombre`
+SELECT `DNI_D`, `ombre
 FROM `Desarolladores`
 ORDER BY `Nombre`;
 ```
