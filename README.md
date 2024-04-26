@@ -24,9 +24,10 @@ JOIN sector ON empleado.id_sector = sector.id
 ## **Segundo Ejercicio**
 Lampone necesita saber cuáles son las 3 salas más grandes de la empresa para llamar a una empresa de limpieza y pedirle cotización (necesita el id y la superficie de las 3 salas)(recordar que no deben utilizar TOP).
 ```sql
-SELECT empleado.dni, empleado.nombre, empleado.apellido
-FROM empleado
-JOIN sector ON empleado.id_sector = sector.nombre
+SELECT sala.superficie, sala.id
+FROM sala
+ORDER BY sala.superficie DESC
+LIMIT 3;
 ```
 
 ## **Tercer Ejercicio**
