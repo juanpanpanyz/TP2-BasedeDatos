@@ -41,14 +41,9 @@ Medina tiene que poder llamar a los empleados de su sector (Investigación), par
 Hay que agrandar el equipo de caracterización, para eso Ravenna pidió agregar a una persona a su sector.
 
 ```sql
-INSERT INTO empleado (dni, nombre, apellido, email, id_sector) VALUES (50456028, los, simuladores, aguantelosimuladores@hotmail.com, 4)
-INSERT INTO telefono (numero, id_duenio) VALUES (54988338, 50456028);
+INSERT INTO empleado (dni, nombre, apellido, email, id_sector) VALUES ("50456028", "los", "simuladores", "aguantelosimuladores@hotmail.com", 4);
+INSERT INTO telefono (numero, id_duenio) VALUES ("54988338", "50456028");
 ```
-INSERT INTO empleado (nombre, apellido, email, dni, id_sector)
-VALUES (Daniel, Lopez, danilopez@gmail.com, 50456028, 4);
-SET @dni = 50456028;
-INSERT INTO telefono (telefono, id_duenio)
-VALUES (48785838, @dni);
 
 
 ## **Quinto Ejercicio**
