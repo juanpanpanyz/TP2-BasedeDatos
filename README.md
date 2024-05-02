@@ -1,6 +1,6 @@
 # TP2 consulta de Bases de Datos  NO SE COPIEN VAGOS
 
-### **Alumnos:** Juan Baader
+### **Alumnos:** Juan Baader, Lucio Castielo y Manuel Coluccio
 
 ### **Año:** 2024
 
