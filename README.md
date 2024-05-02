@@ -102,7 +102,7 @@ DELETE FROM telefono WHERE telefono.dni_duenio = 18354680;
 ```
 
 ```sql
-INSERT INTO empleado VALUES(3, "Lucio", "Crack", "aguantechacrita@chaca.com", 2);
+INSERT INTO empleado VALUES(2, "Lucio", "Crack", "aguantechacrita@chaca.com", 2);
 ```
 
 ```sql
