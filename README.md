@@ -93,7 +93,7 @@ JOIN sector ON empleado.id_sector = sector.id
 JOIN telefono ON empleado.dni = telefono.dni_duenio WHERE empleado.dni = 18354680;
 ```
 
-## **Decimo Ejercicio**
+## **Diezavo Ejercicio**
 Fernando Laguzzi se desvincula de la empresa, porque va a ir a la cárcel. Además, deben contratar un nuevo empleado para cubrir su puesto en el mismo sector. Este empleado deberá tener un número de teléfono asignado. (Para este punto se necesitan 3 queries).
 
 ```sql
@@ -108,3 +108,19 @@ INSERT INTO empleado VALUES(2, "Lucio", "Crack", "aguantechacrita@chaca.com", 2)
 ```sql
 INSERT INTO telefono VALUES(1115347965, 2);
 ```
+
+## **Bonus 1**
+Santos quiere permitir que los empleados tengan más de un mail de contacto. Modificar la base de datos para que esto sea posible y luego explicar en qué se basa esta modificación (no es necesario utilizar consultas para modificar la estructura).
+
+```sql
+
+```
+
+## **Bonus 2**
+Realizar una consulta en SQL que devuelva la superficie total del edificio de la empresa. Para este punto deberán investigar las sentencias SQL en internet y encontrar alguna que permita realizar esta tarea.
+
+```sql
+SELECT SUM(superficie) AS superficie_total
+FROM sala;
+```
+
