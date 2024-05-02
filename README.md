@@ -97,5 +97,14 @@ JOIN telefono ON empleado.dni = telefono.dni_duenio WHERE empleado.dni = 18354
 Fernando Laguzzi se desvincula de la empresa, porque va a ir a la cárcel. Además, deben contratar un nuevo empleado para cubrir su puesto en el mismo sector. Este empleado deberá tener un número de teléfono asignado. (Para este punto se necesitan 3 queries).
 
 ```sql
+DELETE FROM empleado WHERE empleado.dni = 18354680;
+DELETE FROM telefono WHERE telefono.dni_duenio = 18354680;
+```
 
+```sql
+INSERT INTO empleado VALUES(3, "Lucio", "Crack", "aguantechacrita@chaca.com", 2);
+```
+
+```sql
+INSERT INTO telefono VALUES(1115347965, 2);
 ```
