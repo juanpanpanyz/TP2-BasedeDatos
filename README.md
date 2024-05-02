@@ -34,7 +34,10 @@ LIMIT 3;
 Medina tiene que poder llamar a los empleados de su sector (Investigación), para eso pidió una lista de sus nombres, apellidos y números de teléfono. Si alguno tiene más de un teléfono Medina pidió tener todos.
 
 ```sql
-
+SELECT empleado.nombre, empleado.apellido, telefono.numero AS numero
+FROM empleado 
+JOIN telefono ON telefono.dni_duenio = empleado.dni
+WHERE empleado.id_sector = 1;
 ```
 
 ## **Cuarto Ejercicio**
@@ -76,7 +79,8 @@ DELETE FROM telefono WHERE telefono.dni_duenio = 8578124;
 Como queda un cupo vacante en el sector de planificación, Matías Miguens lo va a ocupar.
 
 ```sql
-
+UPDATE empleado SET id_sector = 3 
+WHERE dni = 43182902;
 ```
 
 ## **Noveno Ejercicio**
