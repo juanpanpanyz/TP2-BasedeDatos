@@ -42,7 +42,6 @@ Hay que agrandar el equipo de caracterización, para eso Ravenna pidió agregar 
 
 ```sql
 INSERT INTO empleado (dni, nombre, apellido, email, id_sector) VALUES ("50456028", "los", "simuladores", "aguantelosimuladores@hotmail.com", 4);
-INSERT INTO telefono (numero, id_duenio) VALUES ("54988338", "50456028");
 ```
 
 
