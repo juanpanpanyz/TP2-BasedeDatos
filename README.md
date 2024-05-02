@@ -113,7 +113,7 @@ INSERT INTO telefono VALUES(1115347965, 2);
 Santos quiere permitir que los empleados tengan más de un mail de contacto. Modificar la base de datos para que esto sea posible y luego explicar en qué se basa esta modificación (no es necesario utilizar consultas para modificar la estructura).
 
 ```sql
-
+Hay que hacer una nueva tabla para guardar los mails, una relación uno a muchos como con los telefonos.
 ```
 
 ## **Bonus 2**
